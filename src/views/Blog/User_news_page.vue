@@ -105,6 +105,7 @@ td {
   text-align: left;
   padding: 8px 12px;
   border-radius: 4px;
+  height: 40px;
 }
 .user_data > h2 {
   color: #222;
