@@ -25,9 +25,9 @@
           <p class="nav_link">Заявки</p>
           <p class="nav_link">Политика</p>
         </div>
-        <div class="nav_links">
+        <div class="nav_links" style="height: fit-content;">
           <p class="nav_head">Помощь</p>
-          <p class="nav_link">Часто задаваемые вопросы</p>
+          <p class="nav_link" style="margin-top: 20px;">Часто задаваемые вопросы</p>
         </div>
       </nav>
     </section>
@@ -57,7 +57,6 @@ footer {
 .info_footer {
   display: grid;
   width: 395.598px;
-  gap: 24px;
 }
 p {
   color: #1e2833;

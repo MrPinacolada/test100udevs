@@ -5,17 +5,21 @@ export const Store = defineStore('store', {
   state: () => {
     return {
       Nav_bar_position: false,
+      login_popup:false,
+      setts_popup:false,
+      isUser:false,
+      userAvatar:'',
       db_circlednews: [
         { id: 1, src: 'src/assets/circle_news/0579ae925b08b902f0a01c5b83c24fa4.jpeg' },
-        { id: 2, src: 'src/assets/circle_news/0579ae925b08b902f0a01c5b83c24fa4.jpeg' },
+        { id: 2, src: 'src/assets/circle_news/073ff24f70d49cdd13f65574835670df.jpeg' },
         { id: 3, src: 'src/assets/circle_news/0579ae925b08b902f0a01c5b83c24fa4.jpeg' },
         { id: 4, src: 'src/assets/circle_news/0579ae925b08b902f0a01c5b83c24fa4.jpeg' },
-        { id: 5, src: 'src/assets/circle_news/0579ae925b08b902f0a01c5b83c24fa4.jpeg' }
+        { id: 5, src: 'src/assets/circle_news/cf0551ef0c16735d7fa2ae9c65d4becf.jpeg' }
       ],
       db_allnews: [
         {
           id: 1,
-          img: 'src/assets/circle_news/0579ae925b08b902f0a01c5b83c24fa4.jpeg',
+          img: 'src/assets/circle_news/cf0551ef0c16735d7fa2ae9c65d4becf.jpeg',
           date_time: moment().format('LT'),
           date_day: moment().format('L'),
           views: 20,
@@ -39,7 +43,7 @@ export const Store = defineStore('store', {
         },
         {
           id: 3,
-          img: 'src/assets/circle_news/0579ae925b08b902f0a01c5b83c24fa4.jpeg',
+          img: 'src/assets/circle_news/cf0551ef0c16735d7fa2ae9c65d4becf.jpeg',
           date_time: moment().format('LT'),
           date_day: moment().format('L'),
           views: 20,
@@ -63,7 +67,7 @@ export const Store = defineStore('store', {
         },
         {
           id: 5,
-          img: 'src/assets/circle_news/0579ae925b08b902f0a01c5b83c24fa4.jpeg',
+          img: 'src/assets/circle_news/cf0551ef0c16735d7fa2ae9c65d4becf.jpeg',
           date_time: moment().format('LT'),
           date_day: moment().format('L'),
           views: 20,
@@ -231,7 +235,7 @@ export const Store = defineStore('store', {
               id: 1,
               img: 'src/assets/circle_news/0579ae925b08b902f0a01c5b83c24fa4.jpeg',
               title: `Посланник Генерального секретаря ООН по делам молодежи Джаятма Викраманаяке приняла участие в презентации созданной по инициативе Узбекистана Группе друзей по правам молодежи. В рамках этого международного проекта планируется продвижение прав молодых жителей планеты и расшире...`,
-              shortTitle:'Посланник Генерального секретаря ООН по делам молодежи....',
+              shortTitle: 'Посланник Генерального секретаря ООН по делам молодежи....',
               date_time: moment().format('LT'),
               date_day: moment().format('L'),
               views: 20,
@@ -241,7 +245,7 @@ export const Store = defineStore('store', {
               id: 2,
               img: 'src/assets/circle_news/0579ae925b08b902f0a01c5b83c24fa4.jpeg',
               title: `Посланник Генерального секретаря ООН по делам молодежи Джаятма Викраманаяке приняла участие в презентации созданной по инициативе Узбекистана Группе друзей по правам молодежи. В рамках этого международного проекта планируется продвижение прав молодых жителей планеты и расшире...`,
-              shortTitle:'Посланник Генерального секретаря ООН по делам молодежи....',
+              shortTitle: 'Посланник Генерального секретаря ООН по делам молодежи....',
               date_time: moment().format('LT'),
               date_day: moment().format('L'),
               views: 20,
@@ -251,7 +255,7 @@ export const Store = defineStore('store', {
               id: 3,
               img: 'src/assets/circle_news/0579ae925b08b902f0a01c5b83c24fa4.jpeg',
               title: `Посланник Генерального секретаря ООН по делам молодежи Джаятма Викраманаяке приняла участие в презентации созданной по инициативе Узбекистана Группе друзей по правам молодежи. В рамках этого международного проекта планируется продвижение прав молодых жителей планеты и расшире...`,
-              shortTitle:'Посланник Генерального секретаря ООН по делам молодежи....',
+              shortTitle: 'Посланник Генерального секретаря ООН по делам молодежи....',
               date_time: moment().format('LT'),
               date_day: moment().format('L'),
               views: 20,

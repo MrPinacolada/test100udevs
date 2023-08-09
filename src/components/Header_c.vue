@@ -3,10 +3,11 @@
     <div class="header_filler">
       <img style="width: 146px; height: 49px" src="../assets/LOGO/Group_1.svg" alt="LOGO" />
       <Nav_bar style="margin-top: 0; scale: 0.9" v-if="store.$state.Nav_bar_position" />
-      <div class="left_header">
-        <img style="width: 32px; height: 32px" src="../assets/stuff/notifications.svg" alt="note" />
-        <button>Войти</button>
+      <div class="left_header" v-if="!store.$state.isUser">
+        <i v-badge.danger="2" class="pi pi-bell p-overlay-badge" style="font-size: 2rem" />
+        <button @click="store.$state.login_popup = !store.$state.login_popup">Войти</button>
       </div>
+      <User_account v-if="store.$state.isUser" />
     </div>
   </header>
 </template>
@@ -36,6 +37,7 @@ button {
   font-size: 16px;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 .header_filler {
   align-items: center;

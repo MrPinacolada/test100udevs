@@ -1,11 +1,13 @@
 <template>
   <Header_c />
   <main><RouterView /></main>
+  <login_form />
+  <User_setts_form/>
   <Footer_c />
 </template>
 
 <script setup lang="ts">
-import { watch, watchEffect } from 'vue'
+import { onMounted, watch, watchEffect } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import { useRoute } from 'vue-router'
 import { Store } from '@/stores/store'
@@ -17,6 +19,14 @@ watchEffect(() => {
   if (route.path != '/major_page') {
     store.$state.Nav_bar_position = true
   } else store.$state.Nav_bar_position = false
+})
+onMounted(() => {
+  let userName = localStorage.getItem('username')
+  let userAvatar = localStorage.getItem('avatar')
+  if (userName && userAvatar) {
+    store.$state.userAvatar = userAvatar
+    store.$state.isUser = true
+  }
 })
 </script>
 
@@ -102,5 +112,11 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: 49px;
+}
+.user_acc_photo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-size: cover;
 }
 </style>

@@ -2,6 +2,7 @@ import Envelop_pageVue from '@/views/Cover/Envelop_page.vue'
 import Major_page from '@/views/Blog/Major_page.vue'
 import News_page from '@/views/Blog/News_page.vue'
 import User_news_page from '@/views/Blog/User_news_page.vue'
+import Create_publication from '@/views/Blog/Create_publication.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
@@ -26,7 +27,12 @@ const router = createRouter({
       path: '/major_page/creator:id',
       name: 'creator',
       component: User_news_page
-    }
+    },
+    {
+      path: '/editor',
+      name: 'editor',
+      component: Create_publication
+    },
   ]
 })
 
