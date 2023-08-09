@@ -2,6 +2,7 @@
 /* eslint-disable vue/multi-word-component-names */
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+
 import Envelop_page from '@/views/Cover/Envelop_page.vue'
 import Major_pageVue from './views/Blog/Major_page.vue'
 import Header_c from '@/components/Header_c.vue'
@@ -14,6 +15,7 @@ import Create_publication from '@/views/Blog/Create_publication.vue'
 import User_news_page from '@/views/Blog/User_news_page.vue'
 import Circled_news from '@/components/Circled_news.vue'
 import User_setts_form from '@/components/User_setts_form.vue'
+
 import Card from 'primevue/card'
 import Paginator from 'primevue/paginator'
 import Avatar from 'primevue/avatar'
@@ -27,13 +29,13 @@ import Calendar from 'primevue/calendar'
 import Dropdown from 'primevue/dropdown'
 import InputNumber from 'primevue/inputnumber'
 import Password from 'primevue/password'
-import MultiSelect from 'primevue/multiselect';
-import Chips from 'primevue/chips';
-// import { ValidationProvider } from 'vee-validate'
+import MultiSelect from 'primevue/multiselect'
+import Chips from 'primevue/chips'
 
 import App from './App.vue'
 import router from './router'
 import PrimeVue from 'primevue/config'
+
 import 'primevue/resources/primevue.min.css'
 import 'primevue/resources/themes/lara-light-indigo/theme.css'
 import 'primeicons/primeicons.css'
@@ -64,6 +66,7 @@ app.component('User_account', User_account)
 app.component('Create_publication', Create_publication)
 app.component('login_form', login_form)
 app.component('User_setts_form', User_setts_form)
+
 app.component('InputText', InputText)
 app.component('Card', Card)
 app.component('Paginator', Paginator)

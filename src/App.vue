@@ -2,13 +2,13 @@
   <Header_c />
   <main><RouterView /></main>
   <login_form />
-  <User_setts_form/>
+  <User_setts_form />
   <Footer_c />
 </template>
 
 <script setup lang="ts">
-import { onMounted, watch, watchEffect } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
+import { onMounted, watchEffect } from 'vue'
+import { RouterView } from 'vue-router'
 import { useRoute } from 'vue-router'
 import { Store } from '@/stores/store'
 
@@ -50,9 +50,15 @@ span {
   text-decoration: 0;
 }
 main {
-  /* margin-top: 87px; */
   width: 80%;
   margin: auto;
+}
+.p-all {
+  font-feature-settings:
+    'clig' off,
+    'liga' off;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
 }
 .card_info {
   display: flex;
@@ -69,47 +75,27 @@ main {
 
 .p_card {
   color: #aebec9;
-  font-feature-settings:
-    'clig' off,
-    'liga' off;
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
 .p_tag {
   margin-left: 20px;
   color: var(--udevs-blue, #1b5bf7);
-  font-feature-settings:
-    'clig' off,
-    'liga' off;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   cursor: pointer;
 }
 .p_titile {
   color: #555;
-  font-feature-settings:
-    'clig' off,
-    'liga' off;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 32px;
 }
 .h_title {
   color: #000;
-  font-feature-settings:
-    'clig' off,
-    'liga' off;
-  font-family: 'Roboto', sans-serif;
   font-size: 32px;
-  font-style: normal;
   font-weight: 700;
   line-height: 49px;
 }

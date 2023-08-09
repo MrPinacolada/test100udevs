@@ -17,7 +17,7 @@
     </div>
     <div class="news_data">
       <img :src="item.img" alt="" />
-      <p class="p_creator">Фото: {{ item.creator }}</p>
+      <p class="p_creator p-all">Фото: {{ item.creator }}</p>
       <span class="card_info">
         <p class="p_card">{{ item.date_time }}</p>
         <p class="p_card">{{ item.date_day }}</p>
@@ -28,8 +28,8 @@
         </span>
       </span>
       <div class="writting">
-        <h2>{{ item.title }}</h2>
-        <p v-html="item.writting"></p>
+        <h2 class="p-all">{{ item.title }}</h2>
+        <p class="p-all" v-html="item.writting"></p>
       </div>
     </div>
   </section>
@@ -49,7 +49,6 @@ const newsId = computed(() => {
 })
 onMounted(() => {
   currentNews.value = store.$state.db_allnews.filter((item) => item.id === newsId.value) || null
-  console.log('currentNews.value: ', currentNews.value)
 })
 </script>
 
@@ -66,10 +65,6 @@ onMounted(() => {
 }
 .p_creator {
   color: #2d2d2d;
-  font-feature-settings:
-    'clig' off,
-    'liga' off;
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 300;
@@ -80,18 +75,13 @@ onMounted(() => {
 }
 .writting > h2 {
   color: #2d2d2d;
-  font-family: 'Roboto', sans-serif;
   font-size: 32px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 .writting > p {
   margin-top: 32px;
   color: #2d2d2d;
-  font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 300;
   line-height: 140%;
 }
@@ -117,7 +107,6 @@ onMounted(() => {
 
 .creator_name {
   color: #2d2d2d;
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
 }

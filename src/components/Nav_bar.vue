@@ -3,7 +3,7 @@
     <span
       v-for="link in links"
       :key="link.id"
-      class="nav_link"
+      class="nav_link p-all"
       :class="{ nav_active: link.id === activeLink }"
       @click="setActiveLink(link.id)"
       >{{ link.name }}</span
@@ -40,12 +40,7 @@ const setActiveLink = (linkId: number) => {
 }
 .nav_link {
   color: #000;
-  font-feature-settings:
-    'clig' off,
-    'liga' off;
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   padding: 8px;

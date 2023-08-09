@@ -20,12 +20,12 @@
     </div>
   </section>
   <section class="user_publics" v-if="dbCreator">
-    <h2 class="h_title">ПУБЛИКАЦИИ</h2>
+    <h2 class="h_title p-all">ПУБЛИКАЦИИ</h2>
     <div class="user_publics_wrapper" v-for="item in dbCreator" :key="item.id">
       <div class="public_box_img">
         <div class="imgbox" :style="`background-image: url(${item.img})`"></div>
         <div class="public_box_info">
-          <h3>{{ item.shortTitle }}</h3>
+          <h3 class="p-all">{{ item.shortTitle }}</h3>
           <span class="card_info">
             <p class="p_card">{{ item.date_time }}</p>
             <p class="p_card">{{ item.date_day }}</p>
@@ -37,7 +37,7 @@
             </span>
           </span>
           <p class="p_titile">{{ item.title }}</p>
-          <button>Читать</button>
+          <button class="p-all">Читать</button>
         </div>
       </div>
     </div>
@@ -108,7 +108,6 @@ td {
 }
 .user_data > h2 {
   color: #222;
-  font-family: Roboto;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -141,14 +140,8 @@ td {
 
 .public_box_info > h3 {
   color: #222;
-  font-feature-settings:
-    'clig' off,
-    'liga' off;
-  font-family: 'Roboto', sans-serif;
   font-size: 30px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
 }
 button {
   margin-top: 24px;
@@ -160,12 +153,7 @@ button {
   gap: 10px;
   border-radius: 8px;
   color: #fff;
-  font-feature-settings:
-    'clig' off,
-    'liga' off;
-  font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   border: 1px solid var(--udevs-blue, #1b5bf7);

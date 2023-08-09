@@ -43,7 +43,6 @@ footer {
   bottom: 0;
   background: #fafafc;
   height: auto;
-  /* width: 100vw; */
   padding: 40px 0px 40px 0px;
   display: flex;
   align-items: center;

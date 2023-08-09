@@ -1,6 +1,6 @@
 <template>
   <section class="lastnews_container">
-    <div class="title">
+    <div class="title p-all">
       <h1>История последних новостей</h1>
     </div>
     <div class="circle_news">
@@ -23,17 +23,14 @@ const store = Store()
 .lastnews_container {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  /* gap: 32px; */
 }
 .title {
   margin-top: 51px;
   color: #222;
   font-size: 22px;
-  font-style: normal;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0.25px;
-  font-family: 'Roboto', sans-serif;
 }
 .circle_news {
   display: flex;

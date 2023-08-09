@@ -1,5 +1,5 @@
 <template>
-  <Dialog v-model:visible="store.$state.login_popup" modal header="Как вас зовут?" :style="{}">
+  <Dialog v-model:visible="store.$state.login_popup" modal header="Как вас зовут?">
     <template #default>
       <InputText
         v-model="userName"
@@ -28,7 +28,7 @@
       </div>
     </template>
     <template #footer>
-      <button style="width: 100%" @click="handleLogin" class="login_butt">Войти</button>
+      <button style="width: 100%" @click="handleLogin" class="login_butt p-all">Войти</button>
     </template>
   </Dialog>
 </template>
@@ -41,7 +41,7 @@ const store = Store()
 const avatarsExample = [
   'src/assets/user/example_avatars/bear.png',
   'src/assets/user/example_avatars/gamer.png',
-  'src/assets/user/example_avatars/man_(1).png',
+  'src/assets/user/example_avatars/dude.png',
   'src/assets/user/example_avatars/man.png',
   'src/assets/user/example_avatars/woman.png'
 ]
@@ -80,7 +80,7 @@ label {
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 24px;
   letter-spacing: -0.12px;
 }
 .avatars_example {
@@ -93,13 +93,11 @@ label {
   border-radius: 6px;
   border: none;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: -0.096px;
-  background: var(--udevs-blue, #1b5bf7);
+  background: #1b5bf7;
   cursor: pointer;
 }
 .avatar {

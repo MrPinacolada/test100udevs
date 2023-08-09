@@ -1,8 +1,8 @@
 <template>
   <section class="envelop-back">
     <div class="banchmark">
-      <h1>Bootcamp</h1>
-      <RouterLink :to="{ name: 'major_page' }"> <button>Blog</button></RouterLink>
+      <h1 class="p-all">Bootcamp</h1>
+      <RouterLink :to="{ name: 'major_page' }"> <button class="p-all">Blog</button></RouterLink>
     </div>
   </section>
 </template>
@@ -40,7 +40,6 @@ button {
   border-radius: 29px;
   font-weight: 700;
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
   border: none;
 }
 </style>

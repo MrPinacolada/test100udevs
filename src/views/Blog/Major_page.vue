@@ -49,7 +49,7 @@ import { ref, computed } from 'vue'
 
 const store = Store()
 
-let currentPage = ref(1)
+const currentPage = ref(1)
 const paginatedNews = computed(() => {
   const startIndex = (currentPage.value - 1) * 12
   const endIndex = startIndex + 12
@@ -66,9 +66,6 @@ const paginatedNews = computed(() => {
   gap: 23px;
   grid-template-columns: repeat(4, 1fr);
 }
-
-
-
 .paginator_box {
   grid-column: span 4;
   align-self: end;
