@@ -98,6 +98,7 @@ main {
   font-size: 32px;
   font-weight: 700;
   line-height: 49px;
+  margin-top: 100px;
 }
 .user_acc_photo {
   width: 56px;

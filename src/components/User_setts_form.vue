@@ -1,7 +1,7 @@
 <template>
   <Dialog header="User settings" v-model:visible="store.$state.setts_popup" modal>
     <template #default>
-      <form action="" class="form-container">
+      <form v-on:submit.prevent="" action="" class="form-container">
         <div class="change_photo">
           <div
             class="user_acc_photo xlarge_img"
@@ -106,6 +106,10 @@
             <label for="birthday" class="label">About info</label>
             <Textarea v-model="user.about" autoResize rows="7" cols="30" />
           </div>
+          <div class="butt_container">
+            <button class="butt_reset p_butt" @click="handleReset">Reset</button>
+            <button class="p_butt" @click="handleSubmit">Save</button>
+          </div>
         </div>
       </form>
     </template>
@@ -163,6 +167,26 @@ const roleOp = ref([
   { name: 'Boss', code: '1' },
   { name: 'not Boss', code: '0' }
 ])
+const handleSubmit = () => {
+  console.log(user.value)
+}
+const handleReset = () => {
+  user.value = {
+    firstname: null,
+    surname: null,
+    birthday: null,
+    gender: null,
+    number: null,
+    email: null,
+    passport: null,
+    skills: [],
+    role: null,
+    cars: [],
+    about: undefined,
+    password: null,
+    repeatPassword: null
+  }
+}
 </script>
 
 <style scoped>
@@ -197,6 +221,36 @@ const roleOp = ref([
   justify-items: center;
   height: fit-content;
   gap: 30px;
+}
+.butt_container {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+.p_butt {
+  display: flex;
+  width: 144px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  border: none;
+  background: #0067f4;
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.084px;
+  cursor: pointer;
+}
+.butt_reset {
+  color: #0067f4;
+  background: #fff;
+  border: 1px solid #0067f4;
 }
 
 :deep(.p-dropdown, ) {

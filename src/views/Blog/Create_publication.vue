@@ -1,7 +1,7 @@
 <template>
   <div class="editor_wrapper">
     <section class="creator_box">
-      <h3 class="h_title">Настройки публикации</h3>
+      <h3 class="h_title p-all">Настройки публикации</h3>
       <div class="editor_title">
         <label class="p-all">Название</label>
         <InputText type="text" placeholder="Text input" />
