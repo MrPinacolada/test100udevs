@@ -7,7 +7,7 @@
             class="user_acc_photo xlarge_img"
             :style="`background-image: url(${
               store.$state.userAvatar ||
-              '../assets/user/user_avatar/deeb8f5d8ac8b3780b8ad0d1791ed9e6.jpeg'
+              'assets/user/user_avatar/deeb8f5d8ac8b3780b8ad0d1791ed9e6.jpeg'
             })`"
           ></div>
           <p style="white-space: nowrap; color: blue; cursor: pointer" class="p_card">

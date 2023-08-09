@@ -39,11 +39,11 @@ import { Store } from '@/stores/store'
 
 const store = Store()
 const avatarsExample = [
-  'src/assets/user/example_avatars/bear.png',
-  'src/assets/user/example_avatars/gamer.png',
-  'src/assets/user/example_avatars/dude.png',
-  'src/assets/user/example_avatars/man.png',
-  'src/assets/user/example_avatars/woman.png'
+  'assets/user/example_avatars/bear.png',
+  'assets/user/example_avatars/gamer.png',
+  'assets/user/example_avatars/dude.png',
+  'assets/user/example_avatars/man.png',
+  'assets/user/example_avatars/woman.png'
 ]
 const selectedAvatar = ref('')
 const userName = ref('')

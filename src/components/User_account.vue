@@ -3,7 +3,7 @@
     class="user_acc_photo"
     @click="toggleOpenMenu"
     :style="`background-image: url(${
-      store.$state.userAvatar || 'src/assets/user/user_avatar/deeb8f5d8ac8b3780b8ad0d1791ed9e6.jpeg'
+      store.$state.userAvatar || 'assets/user/user_avatar/deeb8f5d8ac8b3780b8ad0d1791ed9e6.jpeg'
     })`"
     aria-haspopup="true"
     aria-controls="overlay_menu"

@@ -5,7 +5,7 @@
         <div
           class="creator_image"
           :style="{
-            backgroundImage: `url(src/assets/user/user_avatar/deeb8f5d8ac8b3780b8ad0d1791ed9e6.jpeg)`
+            backgroundImage: `url(assets/user/user_avatar/deeb8f5d8ac8b3780b8ad0d1791ed9e6.jpeg)`
           }"
         ></div
       ></RouterLink>
